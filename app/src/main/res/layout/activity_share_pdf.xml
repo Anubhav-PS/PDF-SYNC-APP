@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/sharePdfPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matt_100"
+    tools:context=".activities.SharePDF">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/sharePdfToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/matt_100"
+        android:elevation="1dp"
+        app:elevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/sharePdfBackBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/baseline_arrow_back_24"
+                android:backgroundTint="@color/blue_300">
+
+            </ImageButton>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sharePdfToolbarTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="22dp"
+                android:layout_toRightOf="@id/sharePdfBackBtn"
+                android:fontFamily="@font/roboto"
+                android:text="Share PDF"
+                android:textColor="@color/white_100"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/matt_200">
+
+            </View>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sharePdfSearchUserLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sharePdfToolbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/roboto"
+        android:paddingStart="28dp"
+        android:text="Add User To Grant Access"
+        android:textColor="@color/white_100"
+        android:textSize="18sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <ProgressBar
+        android:id="@+id/sharePdfSearchProgressBar"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_below="@id/sharePdfToolbar"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_toEndOf="@id/sharePdfSearchUserLabel"
+        android:indeterminateTint="@color/blue_200">
+
+    </ProgressBar>
+
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/sharePdfAddUserSearchView"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/sharePdfSearchUserLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/square_search_toolbar"
+        android:paddingEnd="18dp"
+        android:theme="@style/ThemeOverlay.Toolbar"
+        app:menu="@menu/search_menu"
+        app:navigationIconTint="@color/white_100"
+        app:subtitleTextColor="@color/white_100"
+        app:titleMarginTop="14dp"
+        app:titleTextColor="@color/white_100">
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/sharePdfSearchResultCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sharePdfAddUserSearchView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="18dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/matt_200"
+        app:cardCornerRadius="8dp"
+        app:rippleColor="@color/text_grey_1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="24dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="12dp"
+            android:paddingBottom="18dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sharePdfSearchResultNameTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp"
+                android:text="anubhav ps"
+                android:textColor="@color/blue_200"
+                android:textSize="18sp"
+                app:fontFamily="@font/jost_medium_italic">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/sharePdfSearchResultMailIdTxt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="anubhav.p.s@gmail.com"
+                android:textColor="@color/blue_200"
+                android:textSize="15sp"
+                app:fontFamily="@font/roboto">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sharePdfShareToLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sharePdfAddUserBtn"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="@font/basic"
+        android:text="Sharing with : "
+        android:textColor="@color/olive_200"
+        android:textSize="16sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/sharePdfShareWithNameTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sharePdfAddUserBtn"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toRightOf="@id/sharePdfShareToLabel"
+        android:fontFamily="@font/roboto"
+        android:text="Anubhav P.S"
+        android:textColor="@color/white_100"
+        android:textSize="15sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/sharePdfAddMessageOutlinedTxt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sharePdfShareToLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="20dp"
+        android:hint="Add a message for invite..."
+        android:textColorHint="@color/white_100"
+        app:boxBackgroundColor="@color/matt_100"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        app:boxStrokeColor="@color/matt_100"
+        app:boxStrokeWidth="0dp"
+        app:endIconMode="clear_text"
+        app:endIconTint="@color/white_100"
+        app:errorEnabled="false"
+        app:errorIconDrawable="@null"
+        app:hintEnabled="true"
+        app:hintTextColor="@color/white_100">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/sharePdfAddMessageEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="10"
+            android:paddingStart="16dp"
+            android:textColor="@color/white_100"
+            android:textColorHint="@color/white_100">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/sharePdfAddUserBtn"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="4dp"
+        android:text="Grant Access"
+        android:textAllCaps="false"
+        android:textColor="@color/white_100"
+        app:backgroundTint="@color/olive_200">
+
+    </com.google.android.material.button.MaterialButton>
+
+</RelativeLayout>

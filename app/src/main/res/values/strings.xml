@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">PDF Sync</string>
+    <string name="app_name_txt">PDF Sync</string>
+    <string name="app_tagline_txt">never been this easy</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="mail_Id_Page_Hey_Label">Hey,</string>
+    <string name="login_page_login_now_label">Login Now</string>
+    <string name="login_page_new_user_prompt_label">If you are new /</string>
+    <string name="login_page_sign_up_txt">Sign Up</string>
+    <string name="login_page_email_id_label">Username</string>
+    <string name="login_page_email_id_prompt_txt">Enter username</string>
+
+
+    <string name="password_page_welcome_label">Password</string>
+    <string name="password_page_forgot_password_prompt_txt">Forgot password /</string>
+    <string name="passowrd_page_reset_txt">Reset</string>
+    <string name="password_page_login_btn_txt">Login</string>
+
+
+    <string name="sign_up_page_welcome_label">Create an account</string>
+    <string name="sign_up_page_description_label">Lorem Ipsum Dis Iteser ifrape</string>
+    <string name="sign_up_page_username_prompt_txt">Enter Username</string>
+    <string name="sign_up_page_mail_prompt_txt">Enter Email</string>
+    <string name="sign_up_page_password_prompt_txt">Create Password</string>
+    <string name="sign_up_page_btn_txt">Sign Up</string>
+    <string name="sign_up_page_registered_user_prompt_txt">Already registered ?</string>
+    <string name="sign_up_page_to_login_txt">Log in</string>
+    <string name="cell_comments_username_at">\@</string>
+</resources>

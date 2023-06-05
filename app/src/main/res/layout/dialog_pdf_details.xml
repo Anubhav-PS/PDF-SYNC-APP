@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/matt_200"
+    app:cardCornerRadius="12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="12dp"
+        android:background="@color/matt_200"
+        android:orientation="vertical"
+        android:paddingTop="10dp"
+        android:paddingBottom="20dp">
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialogPdfDetailFilenameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="1dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="@font/roboto_medium"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="22dp"
+            android:paddingEnd="38dp"
+            android:text="Quantum Physics.pdf"
+            android:textColor="@color/white_100"
+            android:textSize="16sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="18dp"
+            android:background="#3E3E3E" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialogPdfDetailCommentTxt"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/baseline_comment_24"
+            android:drawablePadding="18dp"
+            android:drawableTint="@color/white_100"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="22dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="38dp"
+            android:paddingBottom="10dp"
+            android:text="Comment"
+            android:textColor="@color/white_100"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialogPdfDetailShareTxt"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/baseline_person_add_alt_24"
+            android:drawablePadding="18dp"
+            android:drawableTint="@color/white_100"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="22dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="38dp"
+            android:paddingBottom="10dp"
+            android:text="Share"
+            android:textColor="@color/white_100"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialogPdfDetailManageAccessTxt"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/baseline_key_24"
+            android:drawablePadding="18dp"
+            android:drawableTint="@color/white_100"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="22dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="38dp"
+            android:paddingBottom="10dp"
+            android:text="Manage Access"
+            android:textColor="@color/white_100"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="58dp"
+            android:layout_marginTop="10dp"
+            android:background="#3E3E3E" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialogPdfDetailRenameTxt"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/baseline_drive_file_rename_outline_24"
+            android:drawablePadding="18dp"
+            android:drawableTint="@color/white_100"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="22dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="38dp"
+            android:paddingBottom="10dp"
+            android:text="Rename"
+            android:textColor="@color/white_100"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialogPdfDetailStarredTxt"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/baseline_star_outline_24"
+            android:drawablePadding="18dp"
+            android:drawableTint="@color/white_100"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="22dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="38dp"
+            android:paddingBottom="10dp"
+            android:text="Add to starred"
+            android:textColor="@color/white_100"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/dialogPdfDetailRemoveTxt"
+            style="@style/SelectableItemBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="8dp"
+            android:background="?attr/selectableItemBackground"
+            android:drawableStart="@drawable/baseline_delete_24"
+            android:drawablePadding="18dp"
+            android:drawableTint="@color/white_100"
+            android:fontFamily="@font/roboto"
+            android:gravity="center_vertical"
+            android:maxLines="2"
+            android:paddingStart="22dp"
+            android:paddingTop="10dp"
+            android:paddingEnd="38dp"
+            android:paddingBottom="10dp"
+            android:text="Remove"
+            android:textColor="@color/white_100"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+    </LinearLayout>
+
+</com.google.android.material.card.MaterialCardView>

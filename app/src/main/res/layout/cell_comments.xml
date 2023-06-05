@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cellPdfListCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/pdf_list_cell"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true"
+    app:rippleColor="@color/matt_100">
+
+    <RelativeLayout
+        android:id="@+id/cellPdfListRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellCommentsAt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/jost_medium_italic"
+            android:letterSpacing="0.05"
+            android:maxLines="1"
+            android:paddingEnd="4dp"
+            android:text="@string/cell_comments_username_at"
+            android:textColor="@color/blue_300"
+            android:textSize="20sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellCommentsUsername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="2dp"
+            android:layout_toRightOf="@id/cellCommentsAt"
+            android:text="anubhav ps"
+            android:textColor="@color/blue_300"
+            android:textSize="16sp"
+            app:fontFamily="@font/jost_medium_italic">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellCommentsUploadedOn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/cellCommentsUsername"
+            android:text="05:56"
+            android:textColor="@color/white"
+            android:textSize="11sp"
+            app:fontFamily="@font/roboto">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellCommentsMessage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cellCommentsAt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="8dp"
+            android:text="Format the document with the right margin and colors to make it look formal and good"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:fontFamily="@font/roboto">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

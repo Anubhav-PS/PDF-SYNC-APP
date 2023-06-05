@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matt_100"
+    android:id="@+id/splashScreenPage"
+    tools:context=".activities.SplashScreen">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/splashScreenTitleTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="40dp"
+        android:gravity="center_horizontal"
+        android:text="@string/app_name_txt"
+        android:textColor="@color/olive_200"
+        android:textSize="28sp"
+        app:fontFamily="@font/jost_medium_italic">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/splashScreenTitleTxt"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="100dp"
+        android:text="@string/app_tagline_txt"
+        android:textColor="@color/blue_200"
+        android:textSize="14sp"
+        app:fontFamily="@font/jost_medium_italic">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+</RelativeLayout>

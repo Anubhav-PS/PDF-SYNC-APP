@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashBoardPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matt_100"
+    tools:context=".activities.DashBoard">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/dashBoardToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/matt_100"
+        android:elevation="1dp"
+        android:paddingStart="4dp"
+        android:paddingEnd="4dp"
+        app:elevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/dashboardAvatarCardView"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:clickable="true"
+                android:elevation="1dp"
+                android:focusable="true"
+                app:cardBackgroundColor="@color/blue_200"
+                app:cardCornerRadius="50dp"
+                app:cardElevation="1dp"
+                app:rippleColor="#6F6F6F">
+
+                <ImageView
+                    android:id="@+id/dashboardAvatarImg"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="center"
+                    android:background="@drawable/ic_round_manage_accounts_24"
+                    android:backgroundTint="@color/matt_100">
+
+                </ImageView>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/dashboardAppTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/jost_medium_italic"
+                android:text="PDF Sync"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                android:textStyle="bold">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <FrameLayout
+        android:id="@+id/dashBoardFragmentContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/dashBoardBottomNav"
+        android:layout_below="@+id/dashBoardToolBar"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="1dp"
+        android:background="@color/matt_100">
+
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/dashBoardBottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/rounded_nav_menu"
+        android:elevation="8dp"
+        android:requiresFadingEdge="horizontal"
+        app:elevation="8dp"
+        app:itemIconTint="@color/nav_icon_tint"
+        app:itemPaddingTop="18dp"
+        app:itemRippleColor="@color/olive_200"
+        app:itemTextColor="@color/nav_icon_tint"
+        app:menu="@menu/bottom_nav_menu">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+
+
+</RelativeLayout>

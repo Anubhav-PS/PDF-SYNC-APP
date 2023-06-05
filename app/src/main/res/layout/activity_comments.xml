@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/commentsPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matt_100"
+    tools:context=".activities.Comments">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/commentsToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/matt_100"
+        android:elevation="1dp"
+        app:elevation="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageButton
+                android:id="@+id/commentsCloseBtn"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_alignParentStart="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:background="@drawable/baseline_close_24"
+                android:backgroundTint="@color/blue_300">
+
+            </ImageButton>
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/commentsTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/roboto"
+                android:text="Comments"
+                android:textColor="@color/white_100"
+                android:textSize="20sp"
+                android:textStyle="bold">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:background="@color/matt_200">
+
+            </View>
+
+
+        </RelativeLayout>
+
+
+    </com.google.android.material.appbar.MaterialToolbar>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/commentsRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/commentsEnterCommentCardView"
+        android:layout_below="@id/commentsToolBar"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:paddingTop="10dp"
+        tools:listitem="@layout/cell_comments">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/commentsEnterCommentCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="20dp"
+        android:layout_toStartOf="@id/commentsSendBtn"
+        app:cardBackgroundColor="@color/white_100"
+        app:cardCornerRadius="12dp">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/commentsOutlinedTxt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Add your comments..."
+            android:textColorHint="@color/matt_100"
+            app:boxBackgroundColor="@color/white_100"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="@color/white_100"
+            app:boxStrokeWidth="0dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/matt_100"
+            app:errorEnabled="false"
+            app:errorIconDrawable="@null"
+            app:hintEnabled="true"
+            app:hintTextColor="@color/matt_100">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/commentsEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textMultiLine"
+                android:paddingStart="16dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/matt_100">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <ImageButton
+        android:id="@+id/commentsSendBtn"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="28dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/baseline_send_24"
+        android:backgroundTint="@color/olive_200"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="6dp"
+        app:tint="@color/white_100">
+
+    </ImageButton>
+
+</RelativeLayout>

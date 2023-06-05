@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/usernamePage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingStart="42dp"
+    android:background="@color/matt_100"
+    android:paddingTop="68dp"
+    android:paddingEnd="42dp"
+    tools:context=".fragments.UsernameFragment">
+
+
+    <LinearLayout
+        android:id="@+id/usernameWelcomeTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:orientation="vertical">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:letterSpacing="0.04"
+            android:text="@string/mail_Id_Page_Hey_Label"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:letterSpacing="0.02"
+            android:text="@string/login_page_login_now_label"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usernameSignUpTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameWelcomeTxt"
+        android:layout_marginTop="18dp"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto"
+            android:text="@string/login_page_new_user_prompt_label"
+            android:textColor="@color/white_100"
+            android:textSize="15sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/usernameToSignUpTxt"
+            style="@style/SelectableItemBackground"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:background="?attr/selectableItemBackground"
+            android:fontFamily="@font/roboto"
+            android:text="@string/login_page_sign_up_txt"
+            android:textColor="@color/blue_300"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/usernameProgressBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameSignUpTxt"
+        android:layout_marginTop="90dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="6dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/login_page_email_id_label"
+            android:textColor="@color/olive_200"
+            android:textSize="22sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <ProgressBar
+            android:id="@+id/usernameProgressBar"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginStart="16dp"
+            android:indeterminateTint="@color/blue_300"
+            android:visibility="visible">
+
+        </ProgressBar>
+
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/usernameOutlinedTxt"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/login_page_email_id_prompt_txt"
+        app:boxBackgroundColor="@color/white_100"
+        app:boxCornerRadiusBottomEnd="12dp"
+        app:boxCornerRadiusBottomStart="12dp"
+        android:layout_marginTop="12dp"
+        app:boxCornerRadiusTopEnd="12dp"
+        app:boxCornerRadiusTopStart="12dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@id/usernameProgressBarLayout"
+        app:boxStrokeColor="@color/matt_100"
+        app:boxStrokeWidth="0dp"
+        app:endIconMode="clear_text"
+        app:errorEnabled="false"
+        app:errorIconDrawable="@null"
+        app:hintEnabled="false"
+        app:hintTextColor="@color/white_100">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/usernameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:maxLength="20"
+            android:textColor="@color/black">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageButton
+        android:id="@+id/usernameProceedBtn"
+        style="@style/ForArrowTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@id/usernameProgressBarLayout"
+        android:layout_marginTop="12dp"
+        android:layout_toRightOf="@id/usernameOutlinedTxt"
+        android:layout_marginStart="10dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:elevation="4dp"
+        android:src="@drawable/ic_rounded_right_arrow" />
+
+    <!--<LinearLayout
+        android:id="@+id/usernameProceedNextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameProgressBarLayout"
+        android:layout_marginTop="12dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+
+
+
+
+
+    </LinearLayout>-->
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/usernameErrorTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/usernameOutlinedTxt"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="90dp"
+        android:textAlignment="textEnd"
+        android:textColor="@color/olive_200">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+</RelativeLayout>
+
+

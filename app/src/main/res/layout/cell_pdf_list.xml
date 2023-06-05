@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cellPdfListCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:clickable="true"
+    android:focusable="true"
+    app:cardBackgroundColor="@color/pdf_list_cell"
+    app:cardCornerRadius="12dp"
+    app:cardUseCompatPadding="true"
+    app:rippleColor="@color/matt_100">
+
+    <RelativeLayout
+        android:id="@+id/cellPdfListRelativeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="20dp">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellPdfListFileNameTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_toStartOf="@id/cellPdfListMore"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_medium"
+            android:letterSpacing="0.05"
+            android:maxLines="1"
+            android:paddingEnd="6dp"
+            android:text="Quantum Physics In Nutshell"
+            android:textColor="@color/white"
+            android:textSize="16sp">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <ImageView
+            android:id="@+id/cellPdfListMore"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            style="@style/SelectableItemBackground"
+            android:background="?attr/selectableItemBackground"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:padding="2dp"
+            android:clickable="true"
+            android:focusable="true"
+            app:tint="@color/white"
+            android:src="@drawable/baseline_more_vert_24">
+        </ImageView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellPdfListUploadedBy"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cellPdfListFileNameTxt"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:text="Uploaded by anubhav ps"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellPdfListUploadedOn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cellPdfListUploadedBy"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="4dp"
+            android:text="12 Jun 2023  05:56"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/cellPdfListSizeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cellPdfListUploadedBy"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="4dp"
+            android:text="2.1 MB"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:fontFamily="@font/roboto">
+
+        </com.google.android.material.textview.MaterialTextView>
+
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>

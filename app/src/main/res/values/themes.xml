@@ -1,0 +1,74 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.PDFSYNC" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/olive_100</item>
+        <item name="colorPrimaryVariant">@color/olive_100</item>
+        <item name="colorOnPrimary">@color/matt_100</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/white_100</item>
+        <item name="colorSecondaryVariant">@color/white</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/matt_100</item>
+        <!-- Customize your theme here. -->
+        <item name="android:navigationBarColor">@color/black</item>
+    </style>
+
+    <style name="SelectableItemTheme">
+        <item name="colorControlHighlight">#E6B3B3B3</item>
+    </style>
+
+    <style name="SelectableItemBackground">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="ForArrow">
+        <item name="colorControlHighlight">@color/black</item>
+    </style>
+
+    <style name="ForArrowTheme">
+        <item name="android:theme">@style/ForArrow</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="cancelBtn">
+        <item name="colorControlHighlight">#E6FF7C7C</item>
+    </style>
+
+    <style name="cancelTheme">
+        <item name="android:theme">@style/cancelBtn</item>
+        <item name="android:background">?attr/selectableItemBackground</item>
+    </style>
+
+    <style name="BottomDialogAnimation">
+        <item name="android:windowEnterAnimation">@anim/slide_up_bottom_dialog</item>
+        <item name="android:windowExitAnimation">@anim/slide_down_bottom_dialog</item>
+    </style>
+
+    <style name="ThemeOverlay.Toolbar" parent="ThemeOverlay.MaterialComponents.Toolbar.Primary">
+        <!-- Text color -->
+        <item name="android:editTextColor">@color/matt_100</item>
+        <!-- Hint text color -->
+        <item name="android:textColorHint">@color/text_grey_1</item>
+
+        <item name="android:textCursorDrawable">@color/matt_100</item>
+
+        <item name="android:textColorSecondary">@color/blue_100</item>
+
+    </style>
+
+    <style name="SquareToolbar" >
+        <!-- Text color -->
+        <item name="android:editTextColor">@color/white_100</item>
+        <!-- Hint text color -->
+        <item name="android:textColorHint">@color/white_100</item>
+
+        <item name="android:textCursorDrawable">@color/blue_300</item>
+
+        <item name="android:textColorSecondary">@color/blue_300</item>
+
+    </style>
+
+</resources>

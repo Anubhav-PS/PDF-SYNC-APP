@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/signUpPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matt_100"
+    android:paddingStart="32dp"
+    android:paddingTop="98dp"
+    android:paddingEnd="32dp"
+    android:paddingBottom="8dp"
+    tools:context=".activities.SignUp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/matt_100">
+
+
+        <View
+            android:id="@+id/signUpAppLogo"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="22dp"
+            android:background="@drawable/pdf_sync_logo">
+
+        </View>
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/signUpWelcomeLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpAppLogo"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/sign_up_page_welcome_label"
+            android:textColor="@color/white"
+            android:textSize="32sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/signUpWelcomeDescriptionLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpWelcomeLabel"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto"
+            android:paddingStart="4dp"
+            android:text="Takes less than a minute!"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpUsernameOutlinedTxt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpWelcomeDescriptionLabel"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="32dp"
+            android:hint="@string/sign_up_page_username_prompt_txt"
+            android:textColorHint="@color/text_grey_1"
+            app:boxBackgroundColor="@color/white_100"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="@color/matt_100"
+            app:boxStrokeWidth="0dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/blue_300"
+            app:endIconTintMode="src_atop"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpUsernameEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLength="20"
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpEmailOutlinedTxt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpUsernameOutlinedTxt"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:hint="@string/sign_up_page_mail_prompt_txt"
+            android:textColorHint="@color/text_grey_1"
+            app:boxBackgroundColor="@color/white_100"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="@color/matt_100"
+            app:boxStrokeWidth="0dp"
+            app:endIconMode="clear_text"
+            app:endIconTint="@color/blue_300"
+            app:endIconTintMode="src_atop"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpEmailEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/signUpPasswordOutlinedTxt"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpEmailOutlinedTxt"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="12dp"
+            android:hint="@string/sign_up_page_password_prompt_txt"
+            android:textColorHint="@color/text_grey_1"
+            app:boxBackgroundColor="@color/white_100"
+            app:boxCornerRadiusBottomEnd="12dp"
+            app:boxCornerRadiusBottomStart="12dp"
+            app:boxCornerRadiusTopEnd="12dp"
+            app:boxCornerRadiusTopStart="12dp"
+            app:boxStrokeColor="@color/matt_100"
+            app:boxStrokeWidth="0dp"
+            app:endIconMode="password_toggle"
+            app:endIconTint="@color/blue_300"
+            app:endIconTintMode="src_atop"
+            app:hintTextColor="@color/black">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/signUpPasswordEt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:lines="1"
+                android:maxLines="1"
+                android:textColor="@color/black">
+
+            </com.google.android.material.textfield.TextInputEditText>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/signUpBtn"
+            android:layout_width="320dp"
+            android:layout_height="62dp"
+            android:layout_below="@id/signUpPasswordOutlinedTxt"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="18dp"
+            android:text="@string/sign_up_page_btn_txt"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/olive_200"
+            app:cornerRadius="8dp"
+            app:elevation="4dp">
+
+        </com.google.android.material.button.MaterialButton>
+
+        <ProgressBar
+            android:id="@+id/signUpProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpBtn"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="6dp"
+            android:indeterminateTint="@color/blue_300"
+            android:visibility="invisible" />
+
+
+        <LinearLayout
+            android:id="@+id/signUpToLoginLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/signUpProgressBar"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="10dp"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:paddingStart="8dp">
+
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="end"
+                android:paddingEnd="6dp"
+                android:text="@string/sign_up_page_registered_user_prompt_txt"
+                android:textColor="@color/text_grey_1" />
+
+
+            <com.google.android.material.textview.MaterialTextView
+                android:id="@+id/signUpToLoginPageTxt"
+                style="@style/SelectableItemBackground"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="2dp"
+                android:background="?attr/selectableItemBackground"
+                android:fontFamily="@font/roboto_medium"
+                android:text="@string/sign_up_page_to_login_txt"
+                android:textColor="@color/blue_300"
+                android:textSize="15sp"
+                android:textStyle="bold">
+
+            </com.google.android.material.textview.MaterialTextView>
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+</ScrollView>

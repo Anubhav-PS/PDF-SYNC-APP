@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_menu_home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/nav_menu_starred"
+        android:icon="@drawable/baseline_star_outline_24"
+        android:title="Starred" />
+
+    <item
+        android:id="@+id/nav_menu_restricted"
+        android:icon="@drawable/baseline_lock_person_24"
+        android:title="Restricted" />
+
+    <item
+        android:id="@+id/nav_menu_shared_with_me"
+        android:icon="@drawable/baseline_people_outline_24"
+        android:title="Shared To Me" />
+</menu>

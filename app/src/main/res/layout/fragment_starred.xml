@@ -1,0 +1,72 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/starredPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/matt_100"
+    tools:context=".fragments.HomeFragment">
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/starredPdfLabel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_medium"
+        android:paddingStart="42dp"
+        android:text="Starred PDF"
+        android:textColor="@color/white"
+        android:textSize="28sp">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+
+    <com.google.android.material.textview.MaterialTextView
+        android:id="@+id/homeSortByLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/starredPdfLabel"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/roboto"
+        android:text="Sort By"
+        android:textColor="@color/white">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <com.google.android.material.textview.MaterialTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/starredPdfLabel"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="38dp"
+        android:fontFamily="@font/roboto"
+        android:text="File Name"
+        android:textColor="@color/white">
+
+    </com.google.android.material.textview.MaterialTextView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/starredRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/homeSortByLabel"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="10dp"
+        android:paddingStart="18dp"
+        android:paddingTop="6dp"
+        android:paddingEnd="18dp"
+        tools:itemCount="6"
+        tools:listitem="@layout/cell_pdf_list">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+
+</RelativeLayout>
