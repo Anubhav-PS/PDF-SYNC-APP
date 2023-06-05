@@ -16,13 +16,11 @@ import android.widget.ImageButton;
 
 import com.anubhavps.pdfsync.R;
 import com.anubhavps.pdfsync.adapters.ViewMyPDFAdapter;
-import com.anubhavps.pdfsync.fragments.StarredFragment;
 import com.anubhavps.pdfsync.interfaces.iOnPdfPressed;
-import com.anubhavps.pdfsync.interfaces.iOnRecycleBinPdfPressed;
 import com.anubhavps.pdfsync.models.PDF;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iFirebaseRecycleBinResult;
-import com.anubhavps.pdfsync.network.iFirebaseResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseRecycleBinResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseResult;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;

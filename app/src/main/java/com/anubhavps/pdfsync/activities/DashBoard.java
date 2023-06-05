@@ -16,8 +16,6 @@ import android.widget.ImageView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
-import androidx.activity.result.ActivityResult;
-import androidx.activity.result.ActivityResultCallback;
 import androidx.activity.result.ActivityResultLauncher;
 import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.appcompat.app.AppCompatActivity;
@@ -28,7 +26,6 @@ import androidx.fragment.app.FragmentTransaction;
 import com.anubhavps.pdfsync.R;
 import com.anubhavps.pdfsync.database.LocalDatabase;
 import com.anubhavps.pdfsync.fragments.HomeFragment;
-import com.anubhavps.pdfsync.fragments.PasswordFragment;
 import com.anubhavps.pdfsync.fragments.RestrictedFragment;
 import com.anubhavps.pdfsync.fragments.SharedWithMeFragment;
 import com.anubhavps.pdfsync.fragments.StarredFragment;
@@ -36,17 +33,13 @@ import com.anubhavps.pdfsync.interfaces.iOnOpenActivity;
 import com.anubhavps.pdfsync.models.PDF;
 import com.anubhavps.pdfsync.models.User;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iFirebaseAccountSignUpResult;
-import com.anubhavps.pdfsync.network.iFirebaseDataUploadResult;
-import com.anubhavps.pdfsync.network.iFirebaseStorageResult;
-import com.google.android.gms.tasks.Task;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseDataUploadResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseStorageResult;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textview.MaterialTextView;
-import com.google.firebase.auth.AuthResult;
-import com.google.firebase.auth.FirebaseAuth;
 
 public class DashBoard extends AppCompatActivity implements iOnOpenActivity, iFirebaseStorageResult, iFirebaseDataUploadResult, View.OnClickListener {
 

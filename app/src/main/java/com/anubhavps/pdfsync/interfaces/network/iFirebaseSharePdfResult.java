@@ -1,4 +1,4 @@
-package com.anubhavps.pdfsync.network;
+package com.anubhavps.pdfsync.interfaces.network;
 
 public interface iFirebaseSharePdfResult {
     void onPdfSharedSuccessful(String message);

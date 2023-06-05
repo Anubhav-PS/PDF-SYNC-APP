@@ -5,7 +5,6 @@ import androidx.appcompat.widget.SearchView;
 import androidx.core.view.MenuItemCompat;
 
 import android.app.Dialog;
-import android.content.DialogInterface;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -20,16 +19,13 @@ import com.anubhavps.pdfsync.R;
 import com.anubhavps.pdfsync.models.PDF;
 import com.anubhavps.pdfsync.models.User;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iFirebaseQueryUserDetailResult;
-import com.anubhavps.pdfsync.network.iFirebaseSharePdfResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseQueryUserDetailResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseSharePdfResult;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
 import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textview.MaterialTextView;
-import com.google.firebase.Timestamp;
-
-import java.sql.Date;
 
 public class SharePDF extends AppCompatActivity implements iFirebaseQueryUserDetailResult, View.OnClickListener, iFirebaseSharePdfResult {
 

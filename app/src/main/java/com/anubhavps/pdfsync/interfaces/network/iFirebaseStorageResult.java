@@ -1,4 +1,4 @@
-package com.anubhavps.pdfsync.network;
+package com.anubhavps.pdfsync.interfaces.network;
 
 import com.anubhavps.pdfsync.enums.Sharing;
 import com.anubhavps.pdfsync.models.PDF;

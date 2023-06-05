@@ -6,35 +6,39 @@ import android.util.Log;
 
 import androidx.annotation.NonNull;
 
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseAccountSignInResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseAccountSignUpResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseAuthSession;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseDataUploadResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseDocumentDownloadResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseFCMTokenResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseQueryUserDetailResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseRecycleBinResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseService;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseSharePdfResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseStarredResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseStorageResult;
+import com.anubhavps.pdfsync.interfaces.network.iOnFirebaseCommentResult;
 import com.anubhavps.pdfsync.models.Comment;
 import com.anubhavps.pdfsync.models.PDF;
 import com.anubhavps.pdfsync.models.User;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
-import com.google.android.gms.tasks.Continuation;
-import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.gms.tasks.Task;
 import com.google.firebase.Timestamp;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.DocumentSnapshot;
 import com.google.firebase.firestore.FirebaseFirestore;
 import com.google.firebase.firestore.Query;
-import com.google.firebase.firestore.QuerySnapshot;
 import com.google.firebase.functions.FirebaseFunctions;
 import com.google.firebase.functions.FirebaseFunctionsException;
 import com.google.firebase.functions.HttpsCallableResult;
 import com.google.firebase.messaging.FirebaseMessaging;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageMetadata;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 
 import java.io.IOException;
-import java.sql.SQLOutput;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
@@ -666,7 +670,7 @@ public class NetworkProcess implements iFirebaseService {
     }
 
     @Override
-    public void sharePdfWithUser(String inviteeName, String inviteeUsername, String inviteeUser_UID, String inviteeMailId, String inviteMessage, PDF pdf,iFirebaseSharePdfResult firebaseSharePdfResult) {
+    public void sharePdfWithUser(String inviteeName, String inviteeUsername, String inviteeUser_UID, String inviteeMailId, String inviteMessage, PDF pdf, iFirebaseSharePdfResult firebaseSharePdfResult) {
 
         Map<String, Object> data = new HashMap<>();
         data.put("user_UID", inviteeUser_UID);
@@ -748,7 +752,7 @@ public class NetworkProcess implements iFirebaseService {
     }
 
     @Override
-    public void deletePermanentlyPdf(String documentId,iFirebaseResult firebaseResult) {
+    public void deletePermanentlyPdf(String documentId, iFirebaseResult firebaseResult) {
          this.db.collection("PDF")
                 .document(User.getInstance().getUser_UID())
                 .collection("FILES")

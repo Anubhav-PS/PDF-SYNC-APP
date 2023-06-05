@@ -1,4 +1,4 @@
-package com.anubhavps.pdfsync.network;
+package com.anubhavps.pdfsync.interfaces.network;
 
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.firestore.DocumentSnapshot;

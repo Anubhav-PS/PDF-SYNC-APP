@@ -1,4 +1,4 @@
-package com.anubhavps.pdfsync.database;
+package com.anubhavps.pdfsync.interfaces.database;
 
 public interface iLocalDatabaseResult {
     void userAddedToDB();

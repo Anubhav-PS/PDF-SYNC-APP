@@ -14,7 +14,7 @@ import androidx.core.content.ContextCompat;
 
 import com.anubhavps.pdfsync.R;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iFirebaseAccountSignUpResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseAccountSignUpResult;
 import com.anubhavps.pdfsync.util.InputFormatter;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.button.MaterialButton;

@@ -1,4 +1,4 @@
-package com.anubhavps.pdfsync.network;
+package com.anubhavps.pdfsync.interfaces.network;
 
 
 import android.net.Uri;
@@ -9,8 +9,6 @@ import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.firebase.firestore.Query;
 
 import java.util.Map;
-
-import javax.xml.parsers.SAXParser;
 
 public interface iFirebaseService {
 

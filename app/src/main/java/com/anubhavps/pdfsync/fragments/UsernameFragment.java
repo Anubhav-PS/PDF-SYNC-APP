@@ -19,7 +19,7 @@ import androidx.fragment.app.FragmentTransaction;
 import com.anubhavps.pdfsync.R;
 import com.anubhavps.pdfsync.activities.SignUp;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iFirebaseAccountSignInResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseAccountSignInResult;
 import com.anubhavps.pdfsync.util.InputFormatter;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;

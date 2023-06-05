@@ -22,14 +22,11 @@ import android.view.ViewGroup;
 
 import com.anubhavps.pdfsync.R;
 import com.anubhavps.pdfsync.activities.Comments;
-import com.anubhavps.pdfsync.activities.SharePDF;
 import com.anubhavps.pdfsync.adapters.ViewMyPDFAdapter;
 import com.anubhavps.pdfsync.interfaces.iOnOpenActivity;
 import com.anubhavps.pdfsync.interfaces.iOnPdfPressed;
 import com.anubhavps.pdfsync.models.PDF;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iFirebaseRecycleBinResult;
-import com.anubhavps.pdfsync.network.iFirebaseStarredResult;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.textview.MaterialTextView;

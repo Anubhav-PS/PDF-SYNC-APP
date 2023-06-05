@@ -10,7 +10,7 @@ import com.anubhavps.pdfsync.R;
 import com.anubhavps.pdfsync.database.LocalDatabase;
 import com.anubhavps.pdfsync.models.User;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iFirebaseAuthSession;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseAuthSession;
 
 
 

@@ -9,6 +9,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 import androidx.annotation.Nullable;
 
 import com.anubhavps.pdfsync.enums.DatabaseOperationStatus;
+import com.anubhavps.pdfsync.interfaces.database.iLocalDatabaseResult;
+import com.anubhavps.pdfsync.interfaces.database.iLocalDatabaseService;
 import com.anubhavps.pdfsync.models.User;
 
 import java.util.concurrent.ExecutorService;

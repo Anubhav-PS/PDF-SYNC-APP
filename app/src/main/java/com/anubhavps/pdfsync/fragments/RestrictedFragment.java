@@ -29,7 +29,7 @@ import com.anubhavps.pdfsync.interfaces.iOnOpenActivity;
 import com.anubhavps.pdfsync.interfaces.iOnPdfPressed;
 import com.anubhavps.pdfsync.models.PDF;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iFirebaseStarredResult;
+import com.anubhavps.pdfsync.interfaces.network.iFirebaseStarredResult;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.gms.tasks.Task;
 import com.google.android.material.snackbar.Snackbar;

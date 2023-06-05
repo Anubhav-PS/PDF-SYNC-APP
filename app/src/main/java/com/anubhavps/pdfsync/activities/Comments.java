@@ -5,25 +5,18 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.view.View;
-import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.anubhavps.pdfsync.R;
 import com.anubhavps.pdfsync.adapters.CommentsAdapter;
-import com.anubhavps.pdfsync.adapters.ViewMyPDFAdapter;
-import com.anubhavps.pdfsync.fragments.HomeFragment;
 import com.anubhavps.pdfsync.models.Comment;
-import com.anubhavps.pdfsync.models.PDF;
 import com.anubhavps.pdfsync.models.User;
 import com.anubhavps.pdfsync.network.NetworkProcess;
-import com.anubhavps.pdfsync.network.iOnFirebaseCommentResult;
+import com.anubhavps.pdfsync.interfaces.network.iOnFirebaseCommentResult;
 import com.firebase.ui.firestore.FirestoreRecyclerOptions;
 import com.google.android.material.textfield.TextInputEditText;
-import com.google.api.Usage;
 import com.google.firebase.firestore.Query;
 
 import java.util.Objects;
